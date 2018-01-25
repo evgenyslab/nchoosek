@@ -30,9 +30,9 @@ int main(int argc, char** argv){
   objList.emplace_back(B);
   objList.emplace_back(C);
 
-  std::vector<std::vector<myObj>> nck = nchoosek<myObj>(objList,2);
+  auto nck = nchoosek<myObj>(objList,2);
 
   std::vector<int> list = {1,2,3,4,5};
-  std::vector<std::vector<int>> nck2 = nchoosek<int>(list,2);
+  auto nck2 = nchoosek<int>(list,2);
 
 }
